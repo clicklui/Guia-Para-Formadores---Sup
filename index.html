@@ -1,0 +1,243 @@
+<html><head><base href="." />
+<style>
+:root {
+  --primary-blue: #003366;
+  --accent-gold: #FFD700;
+  --light-blue: #66A3CC;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background: var(--primary-blue);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: var(--accent-gold);
+}
+
+.guide-section {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.guide-section:hover {
+  transform: translateY(-5px);
+}
+
+.guide-section h2 {
+  color: var(--primary-blue);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 10px;
+}
+
+.steps {
+  list-style-type: none;
+  padding: 0;
+}
+
+.steps li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.steps li:before {
+  content: "→";
+  color: var(--accent-gold);
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.tip-box {
+  background: var(--light-blue);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.button {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--accent-gold);
+  color: var(--primary-blue);
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 15px;
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.panel {
+  display: none;
+  padding: 15px;
+  background: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.warning-box {
+  background: #fff3cd;
+  border-left: 4px solid var(--accent-gold);
+  padding: 15px;
+  margin: 10px 0;
+  color: #856404;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Guia de Orientações Básicas</h1>
+</div>
+
+<div class="container">
+  <div class="guide-section">
+    <h2>1. Exercícios Online - Adicionar/Remover Alunos</h2>
+    <div class="steps">
+      <li>Abra a lista desejada</li>
+      <li>Clique em "Adicionar Alunos"</li>
+      <li>Digite o nome da escola</li>
+      <li>Filtre por turmas ou nome do aluno</li>
+      <li>Selecione o aluno ou turma</li>
+      <li>Clique em "Adicionar"</li>
+      <li>Confirme as alterações</li>
+    </div>
+    
+    <div class="warning-box">
+      <strong>Para remover alunos:</strong>
+      <p>Selecione o aluno/turma na coluna direita, clique em "Remover" e confirme as alterações.</p>
+    </div>
+  </div>
+
+  <div class="guide-section">
+    <h2>Verificações Importantes</h2>
+    <div class="tip-box">
+      <p>Se o aluno não estiver na lista:</p>
+      <ol>
+        <li>Verifique se possui conta clickideia na GU</li>
+        <li>Verifique contas expiradas</li>
+        <li>Confirme dados do aluno no portal:
+          <ul>
+            <li>Nome correto</li>
+            <li>Turma correta</li>
+            <li>Escola correta</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="guide-section">
+    <h2>ClickAcessos e Gerenciamento de Turmas</h2>
+    <button class="accordion">Associação de Turmas ao Professor</button>
+    <div class="panel">
+      <ol>
+        <li>Acesse a área do professor</li>
+        <li>Vá para Gestão de usuários</li>
+        <li>Entre em Minha área</li>
+        <li>Clique em Associar turmas</li>
+        <li>Selecione a turma</li>
+        <li>Clique em adicionar</li>
+      </ol>
+    </div>
+    
+    <button class="accordion">Turmas não aparecem?</button>
+    <div class="panel">
+      <ol>
+        <li>Verifique se a turma está cadastrada corretamente na gestão de usuários</li>
+        <li>Se não encontrar a turma, solicite cadastro ao suporte</li>
+        <li>Se a turma existe mas não aparece, solicite atualização de turmas</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="guide-section">
+    <h2>Enturmação de Alunos</h2>
+    <div class="tip-box">
+      <p>Para alunos do 7º ano (novos ou transferidos):</p>
+      <p>É necessário solicitar a enturmação para acesso completo às ferramentas</p>
+    </div>
+  </div>
+
+  <div class="guide-section">
+    <h2>Solução de Problemas</h2>
+    <div class="tip-box">
+      <p>Antes de reportar um bug:</p>
+      <ul>
+        <li>Verifique a conexão de internet</li>
+        <li>Atualize o navegador</li>
+        <li>Limpe o cache</li>
+        <li>Teste em outro navegador</li>
+      </ul>
+    </div>
+    <div class="warning-box">
+      <p>Se o problema persistir, entre em contato com o suporte fornecendo:</p>
+      <ul>
+        <li>Descrição detalhada do problema</li>
+        <li>Capturas de tela</li>
+        <li>Passos para reproduzir o erro</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.accordion').forEach(button => {
+  button.addEventListener('click', () => {
+    const panel = button.nextElementSibling;
+    
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+      panel.style.animation = "fadeIn 0.5s ease-in";
+    }
+  });
+});
+</script>
+</body>
+</html>
